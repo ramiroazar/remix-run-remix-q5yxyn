@@ -1,4 +1,5 @@
 {
+  "name": "remix-run-remix-q5yxyn",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -14,6 +15,8 @@
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
     "@types/react-transition-group": "^4.4.10",
+    "@vanilla-extract/css": "^1.15.3",
+    "gsap": "^3.12.5",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

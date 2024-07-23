@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { ButtonOne } from "~/components/elements/ButtonOne";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,12 +15,7 @@ export default function Index() {
       <h1 className="text-3xl">Welcome to Remix</h1>
       <ul className="list-disc mt-4 pl-6 space-y-2">
         <li>
-          <Link
-            className="text-blue-700 underline visited:text-purple-900"
-            to="/page-two"
-          >
-            Page Two
-          </Link>
+          <ButtonOne to="/page-two">Page Two</ButtonOne>
         </li>
       </ul>
     </div>
