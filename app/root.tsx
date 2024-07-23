@@ -8,8 +8,15 @@ import {
 import "./tailwind.css";
 import { PageTransition } from "./components/primitives/PageTransition";
 import { AnimatedOutlet } from "./components/primitives/AnimatedOutlet";
+import { useEffect } from "react";
+
+const modules = import.meta.glob("../**/*.css.ts", { eager: true });
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    console.log(modules);
+  }, []);
+
   return (
     <html lang="en">
       <head>
